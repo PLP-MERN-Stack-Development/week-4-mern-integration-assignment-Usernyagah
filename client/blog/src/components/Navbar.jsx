@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import ModeToggle from './ModeToggle';
+
 
 export default function Navbar() {
   return (
@@ -9,7 +9,6 @@ export default function Navbar() {
       <div className="space-x-2 flex items-center">
         <Button asChild><Link to="/">Home</Link></Button>
         <Button asChild><Link to="/create">Create Post</Link></Button>
-        <ModeToggle />
       </div>
     </nav>
   );
